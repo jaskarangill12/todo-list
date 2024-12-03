@@ -1,0 +1,120 @@
+/* General App Container */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #eaf2f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+/* App Title */
+h1 {
+  color: #34495e;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+ 
+/* Form Container */
+.form-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 500px;
+}
+ 
+/* Input Field */
+input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+ 
+input:focus {
+  border-color: #3498db;
+}
+ 
+/* Add Task Button */
+button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+ 
+button:active {
+  background-color: #1c598a;
+}
+ 
+/* Clear Button */
+.clear-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+.clear-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+ 
+.clear-btn:active {
+  background-color: #96281b;
+}
+ 
+/* Task Table */
+.task-table {
+  margin-top: 20px;
+  width: 80%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+ 
+.task-table th, .task-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+ 
+.task-table th {
+  background-color: #3498db;
+  color: white;
+}
+ 
+.task-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+ 
+.task-table tr:hover {
+  background-color: #f1f1f1;
+}
+ 
+.task-table td.completed {
+  text-decoration: line-through;
+  color: #2ecc71;
+  cursor: pointer;
+}
+ 
